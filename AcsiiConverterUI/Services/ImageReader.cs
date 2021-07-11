@@ -16,7 +16,7 @@ namespace AsciiConverterUI.Services
             byte[] pixelBytes = new byte[image.PixelWidth * image.PixelHeight * 4];
 
             // Get pixels as bytes
-            int stride = ((image.PixelWidth * image.Format.BitsPerPixel + 31) / 32) * 4; // I stole this line so it might break
+            int stride = ((image.PixelWidth * image.Format.BitsPerPixel + 31) / 32) * 4; // I stole this line from stackoverflow so it might break
             image.CopyPixels(pixelBytes, stride, 0);
 
             // Convert bytes to RGB
