@@ -9,7 +9,7 @@ namespace AsciiConverterUI.Services
         /// </summary>
         public static System.Drawing.Color[] GetPixels(BitmapSource image)
         {
-            // I hate this whole ass thing
+            // I hate this whole thing
 
             // Create array to hold results
             var pixels = new System.Drawing.Color[image.PixelWidth * image.PixelHeight];

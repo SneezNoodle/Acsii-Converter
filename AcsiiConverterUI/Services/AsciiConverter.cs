@@ -107,8 +107,8 @@ namespace AsciiConverterUI.Services
             private char GetAsciiSymbol(float shade)
             {
                 // Used as a sort of "step size", where the shade changes based on the multiple of this value
-                float palleteSizeReciprocal = 1.0f / palette.Length; // I have no fucking clue what to name this
-                // This variable calculates the distance between A and B
+                float palleteSizeReciprocal = 1.0f / palette.Length; // I have no clue what to name this
+                // This variable is used as the distance between A and B
                 // A  -  B  -  C  -  D  -  E  -  F
                 // '     '.....'((((('#####'%%%%%'
 
